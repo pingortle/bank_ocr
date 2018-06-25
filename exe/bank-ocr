@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'bank_ocr'
+
+puts BankOcr::Processor.new.process File.read(ARGV[0])
